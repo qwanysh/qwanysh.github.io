@@ -6,8 +6,27 @@ a {
   text-decoration: none;
   color: inherit;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   background: #121212;
+}
+@keyframes body-block-bottom {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(380deg);
+  }
+}
+@keyframes body-block-top {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(-390deg);
+  }
 }
 body::before {
   position: fixed;
@@ -19,7 +38,7 @@ body::before {
   height: 400px;
   border: 2px solid rgba(255,255,255,.05);
   z-index: -1;
-  transform: rotate(20deg);
+  animation: body-block-bottom 20s linear infinite;
 }
 body::after {
   position: fixed;
@@ -27,14 +46,11 @@ body::after {
   right: -50px;
   bottom: 0;
   content: '';
-  width: 400px;
+  width: 600px;
   height: 600px;
   border: 2px solid rgba(255,255,255,.05);
   z-index: -1;
-  transform: rotate(-30deg);
-}
-* {
-  box-sizing: border-box;
+  animation: body-block-top 40s linear infinite;
 }
 .preloader {
   display: none;
