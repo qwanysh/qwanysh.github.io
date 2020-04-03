@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 html {
   font-family: 'Montserrat', sans-serif;
 }
@@ -228,7 +228,7 @@ body::after {
 }
 .preloader-text {
   font-size: 45px;
-  font-weight: 500;
+  font-weight: 700;
   color: #fff;
 }
 .preloader-top .preloader-text {
@@ -243,7 +243,7 @@ body::after {
   padding: 0 30px;
 }
 .content {
-  position: fixed;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -254,11 +254,12 @@ body::after {
   left: -250px;
 }
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 30px 0;
+  background: rgba(18, 18, 18, 0.5);
 }
 .header-container {
   display: flex;
@@ -353,14 +354,14 @@ body::after {
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  font-weight: 500;
+  font-weight: 700;
 }
 .content-block {
   height: 100vh;
 }
 .content-block .container {
   height: 100%;
-  padding-top: 110px;
+  padding-top: 140px;
   padding-bottom: 110px;
 }
 .splide,
@@ -390,8 +391,45 @@ body::after {
   font-size: 55px;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.5;
   text-align: center;
   margin: 0 0 20px 0;
+}
+.half-block-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.half-block {
+  height: 100%;
+  width: 50%;
+  padding: 0 10px;
+}
+.block-bg-heading-wrapper {
+  padding-top: 100px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.block-bg-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+}
+.block-bg-heading {
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 50px;
+}
+.block-text {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+  text-align: justify;
 }
