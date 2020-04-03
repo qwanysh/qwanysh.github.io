@@ -7,7 +7,10 @@
   <link rel="shortcut icon" href="static/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="static/css/reset.css">
   <link rel="stylesheet" href="static/css/normalize.css">
+  <link rel="stylesheet" href="static/css/splide/splide.min.css">
+  <link rel="stylesheet" href="static/css/splide/splide-default.min.css">
   <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/media.css">
   <title>Qwanysh Beisembayev</title>
 </head>
 
@@ -34,6 +37,34 @@
         </div>
       </div>
     </header>
+    <section class="content-block">
+      <div class="container">
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide slide-item">
+                <div class="block-caption">
+                  <p class="block-pre-heading">Hello! I'm</p>
+                  <h1 class="block-heading">Qwanysh Beisembayev</h1>
+                </div>
+              </li>
+              <li class="splide__slide slide-item">
+                <div class="block-caption">
+                  <p class="block-pre-heading">I'm</p>
+                  <h2 class="block-heading">Back-end developer</h2>
+                </div>
+              </li>
+              <li class="splide__slide slide-item">
+                <div class="block-caption">
+                  <p class="block-pre-heading">I'm from</p>
+                  <h2 class="block-heading">Almaty, Kazakhstan</h2>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <aside class="side-menu-wrapper">
     <nav class="side-menu">
@@ -43,8 +74,20 @@
     </nav>
   </aside>
   <script src="static/js/hammer.min.js"></script>
+  <script src="static/js/splide.min.js"></script>
   <script src="static/js/preloader.js"></script>
   <script src="static/js/side_menu.js"></script>
+  <script>
+    new Splide('.splide', {
+      type: 'fade',
+      arrows: false,
+      rewind: true,
+      pagination: false,
+      autoplay: true,
+      pauseOnHover: false,
+      drag: false
+    }).mount();
+  </script>
 </body>
 
 </html>
