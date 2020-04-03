@@ -1,6 +1,6 @@
 var preloader = document.querySelector('.preloader');
 
-window.onload = preloaderOut;
+document.addEventListener('DOMContentLoaded', preloaderOut);
 
 var links = document.querySelectorAll('a.preloader-link');
 for(var link of links) {
