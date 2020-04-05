@@ -58,11 +58,11 @@ body {
     opacity: 0.3;
   }
   22% {
-    background: #fff url(../img/q-char.png) no-repeat center / 30px;
+    background: #fff url(../img/favicon.png) no-repeat center / 30px;
     opacity: 1;
   }
   26% {
-    background: #fff url(../img/q-char.png) no-repeat center / 30px;
+    background: #fff url(../img/favicon.png) no-repeat center / 30px;
     opacity: 1;
   }
   28% {
@@ -74,11 +74,11 @@ body {
     opacity: 0.3;
   }
   54% {
-    background: #fff url(../img/b-char.png) no-repeat center / 40px;
+    background: #fff url(../img/q-char.png) no-repeat center / 30px;
     opacity: 1;
   }
   58% {
-    background: #fff url(../img/b-char.png) no-repeat center / 40px;
+    background: #fff url(../img/q-char.png) no-repeat center / 30px;
     opacity: 1;
   }
   60% {
@@ -90,11 +90,11 @@ body {
     opacity: 0.3;
   }
   66% {
-    background: #fff url(../img/favicon.png) no-repeat center / 30px;
+    background: #fff url(../img/b-char.png) no-repeat center / 40px;
     opacity: 1;
   }
   68% {
-    background: #fff url(../img/favicon.png) no-repeat center / 30px;
+    background: #fff url(../img/b-char.png) no-repeat center / 40px;
     opacity: 1;
   }
   70% {
