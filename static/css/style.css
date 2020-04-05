@@ -405,6 +405,12 @@ body::after {
   width: 50%;
   padding: 0 10px;
 }
+.half-block-left {
+  order: 1;
+}
+.half-block-right {
+  order: 2;
+}
 .block-bg-heading-wrapper {
   padding-top: 100px;
   margin-bottom: 20px;
@@ -432,4 +438,7 @@ body::after {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.5;
   text-align: justify;
+}
+.half-block-left .block-bg-heading-wrapper {
+  text-align: right;
 }
