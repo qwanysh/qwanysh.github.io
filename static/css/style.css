@@ -12,6 +12,9 @@ a {
 body {
   background: #121212;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 @keyframes rotate {
   to {
     transform: rotate(360deg);

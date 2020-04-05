@@ -1,4 +1,10 @@
 @media screen and (max-width: 649px) {
+  .content-block {
+    height: auto;
+  }
+  .content-block-fullscreen {
+    height: 100vh;
+  }
   .block-pre-heading {
     font-size: 40px;
     margin-bottom: 10px;
